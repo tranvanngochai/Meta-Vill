@@ -1,0 +1,86 @@
+// Flex
+@mixin flex($align-item, $justify-content) {
+    display: flex;
+    align-items: $align-item;
+    justify-content: $justify-content;
+}
+
+
+// Responsive
+@mixin breakpoints-1 {
+    @media only screen and (max-width: $max-width-1366) {
+        @content;
+    }
+}
+
+@mixin breakpoints-2 {
+    @media only screen and (max-width: $max-width-1024) {
+        @content;
+    }
+}
+
+@mixin breakpoints-3 {
+    @media only screen and (max-width: $max-width-768) {
+        @content;
+    }
+}
+
+@mixin breakpoints-4 {
+    @media only screen and (max-width: $max-width-576) {
+        @content;
+    }
+}
+
+@mixin breakpoints-5 {
+    @media only screen and (max-width: $max-width-480) {
+        @content;
+    }
+}
+
+@mixin breakpoints-6 {
+    @media only screen and (max-width: $max-width-414) {
+        @content;
+    }
+}
+
+@mixin breakpoints-7 {
+    @media only screen and (max-width: $max-width-390) {
+        @content;
+    }
+}
+
+@mixin breakpoints-8 {
+    @media only screen and (max-width: $max-width-375) {
+        @content;
+    }
+}
+
+@mixin breakpoints-rotate-1 {
+    @media (max-width: $max-width-930) and (orientation: landscape) {
+        @content;
+    }
+}
+
+@mixin breakpoints-rotate-2 {
+    @media (max-width: $max-width-896) and (orientation: landscape) {
+        @content;
+    }
+}
+
+@mixin breakpoints-rotate-3 {
+    @media (max-width: $max-width-844) and (orientation: landscape) {
+        @content;
+    }
+}
+
+@mixin breakpoints-rotate-4 {
+    @media (max-width: $max-width-736) and (orientation: landscape) {
+        @content;
+    }
+}
+
+@mixin breakpoints-rotate-5 {
+    @media (max-width: $max-width-667) and (orientation: landscape) {
+        @content;
+    }
+}

@@ -1,0 +1,220 @@
+.ourpartners {
+    background-image: url(../images/bg_Backer-Partners.png);
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 1080px;
+    overflow: hidden;
+
+    @include breakpoints-3 {
+        height: 896px;
+    }
+
+    @include breakpoints-5 {
+        height: 1080px;
+    }
+
+    @include breakpoints-6 {
+        height: 896px;
+        background-image: url(../images/bg_ourpartners-mobile.png);
+    }
+
+
+
+    .container {
+        height: 100%;
+
+        .ourpartners-container {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            height: 98%;
+
+            .ourpartners-heading {
+
+                margin-top: 107px;
+                position: relative;
+                width: 100%;
+                height: 8rem;
+
+                @include breakpoints-3 {
+                    margin-top: 30px;
+                }
+
+                @include breakpoints-4 {
+                    width: 200%;
+                }
+
+                @include breakpoints-7 {
+                    width: 220%;
+                }
+
+                @include breakpoints-rotate-2 {
+                    margin-top: 9.2rem;
+                }
+
+                &__bg {
+                    position: absolute;
+                    width: 100%;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    max-width: fit-content;
+
+                    @include breakpoints-3 {
+
+                        &::after,
+                        &::before {
+                            display: none;
+                        }
+                    }
+
+                    @include breakpoints-4 {
+                        transform: translate(-46%, -50%);
+                    }
+
+                    p {
+                        font-size: 6.4rem;
+                    }
+                }
+
+                &__text {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: fit-content;
+
+                    h2 {
+
+                        font-weight: 700;
+                        font-size: 48px;
+                        line-height: 56px;
+                        text-align: center;
+                        color: $text-color;
+                        text-shadow: 0px 0px 4px rgba(51, 252, 255, 0.45);
+
+                        @include breakpoints-4 {
+                            font-size: 3.5rem;
+                        }
+                    }
+                }
+            }
+
+            .ourpartners-content {
+                max-width: 82rem;
+                margin-top: 20px;
+
+                p {
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 24px;
+                    text-align: center;
+                    color: $text-color;
+                }
+            }
+
+            .ourpartners-listitem {
+                margin-top: 64px;
+                display: grid;
+                grid-template-columns: repeat(5, minmax(0, 1fr));
+                gap: 3rem;
+                overflow-y: auto;
+
+                &::-webkit-scrollbar {
+                    width: 0 !important;
+                    display: none;
+                }
+
+                @include breakpoints-1 {
+                    grid-template-columns: repeat(4, minmax(0, 1fr));
+                    gap: 1rem;
+                    margin-top: 50px;
+                }
+
+                @include breakpoints-4 {
+                    grid-template-columns: repeat(3, minmax(0, 1fr));
+                }
+
+
+                &__item {
+                    width: 225px;
+                    height: 135px;
+                    background: #040026;
+                    clip-path: polygon(3% 0%, 97% 0%, 100% 3%, 100% 97%, 97% 100%, 3% 100%, 0% 97%, 0% 3%);
+                    padding: 2px;
+
+                    transition: all 0.5s ease-in;
+
+                    @include breakpoints-2 {
+                        width: 208px;
+                    }
+
+                    @include breakpoints-3 {
+                        width: 173px;
+                        height: 105px;
+                    }
+
+                    @include breakpoints-5 {
+                        width: 140px;
+                        height: 93px;
+                    }
+
+                    @include breakpoints-6 {
+                        width: 120px;
+                        height: 73.92px;
+                    }
+
+                    @include breakpoints-7 {
+                        width: 107px;
+                        height: 72px;
+                    }
+
+                    @include breakpoints-rotate-1 {
+                        width: 217px;
+                    }
+
+                    @include breakpoints-rotate-2 {
+                        width: 208px;
+                    }
+
+                    @include breakpoints-rotate-3 {
+                        width: 195px;
+                    }
+
+                    @include breakpoints-rotate-4 {
+                        width: 168px;
+                    }
+
+                    @include breakpoints-rotate-5 {
+                        width: 151px;
+                    }
+
+
+                    &:hover {
+
+                        background: linear-gradient(to right, #F70FFF, #12D6DF);
+
+                        .bg {
+                            background: linear-gradient(90.41deg, #330C5E -0.18%, #0F2A58 92.19%);
+                        }
+                    }
+
+                    .bg {
+                        height: 100%;
+                        width: 100%;
+                        clip-path: polygon(3% 0%, 97% 0%, 100% 3%, 100% 97%, 97% 100%, 3% 100%, 0% 97%, 0% 3%);
+                        background: #040026;
+                        transition: all 0.5s ease-in;
+                        @include flex(center, center);
+
+                        img {
+                            object-fit: cover;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}

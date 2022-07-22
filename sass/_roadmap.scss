@@ -1,0 +1,555 @@
+.roadmap {
+    background-image: url(../images/bg_roadmap.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1080px;
+    position: relative;
+    overflow: hidden;
+
+    @include breakpoints-1 {
+        height: 996px;
+    }
+
+    @include breakpoints-2 {
+        height: 839px;
+    }
+
+    @include breakpoints-3 {
+        height: 686px;
+    }
+
+    @include breakpoints-4 {
+        height: 896px;
+        padding-top: 30px;
+        background-image: url(../images/bg_roadmap-mobile.png);
+    }
+
+
+
+    .container {
+        height: 100%;
+        position: relative;
+
+        .roadmap-heading {
+            width: 100%;
+            height: 64px;
+            position: relative;
+            transform: translate(-358px, 181px);
+
+            @include breakpoints-2 {
+                transform: translate(-168px, 79px);
+            }
+
+            @include breakpoints-3 {
+                transform: translate(-141px, 40px);
+            }
+
+            @include breakpoints-4 {
+                transform: unset;
+                margin-bottom: 50px;
+            }
+
+            @include breakpoints-rotate-1 {
+                transform: translate(-168px, 122px);
+            }
+
+            @include breakpoints-rotate-4 {
+                transform: translate(-135px, 78px);
+            }
+
+            @include breakpoints-rotate-5 {
+                transform: translate(-98px, 58px);
+            }
+
+            &__bg {
+                position: absolute;
+                width: 100%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                max-width: fit-content;
+
+                @include breakpoints-4 {
+
+                    &::after,
+                    &::before {
+                        display: none;
+                    }
+                }
+
+                p {
+                    font-size: 6.4rem;
+                }
+
+                .bg_timeline {
+                    display: block;
+                }
+
+                .bg_roadmap {
+                    display: none;
+                }
+
+                @include breakpoints-4 {
+                    .bg_timeline {
+                        display: none;
+                    }
+
+                    .bg_roadmap {
+                        display: block;
+                    }
+                }
+
+            }
+
+            &__text {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: fit-content;
+
+                h2 {
+                    font-weight: 700;
+                    font-size: 48px;
+                    line-height: 56px;
+                    text-align: center;
+                    color: $text-color;
+                    text-shadow: 0px 0px 4px rgba(51, 252, 255, 0.45);
+
+                    @include breakpoints-4 {
+                        font-size: 3.5rem;
+                    }
+                }
+            }
+        }
+
+        .line {
+            border: 2px solid #33FCFF;
+            transform: rotate(-21deg);
+            width: 1057px;
+            position: absolute;
+            top: 41%;
+            left: 10%;
+
+            @include breakpoints-1 {
+                top: 39%;
+                left: 11%;
+                width: 996px;
+
+            }
+
+            @include breakpoints-2 {
+                top: 29%;
+                left: 16%;
+                width: 693px;
+
+            }
+
+            @include breakpoints-3 {
+                top: 31%;
+                left: 5%;
+                width: 693px;
+            }
+
+            @include breakpoints-4 {
+                display: none;
+            }
+
+            @include breakpoints-rotate-1 {
+                top: 34%;
+                left: 16%;
+                width: 685px;
+            }
+
+            @include breakpoints-rotate-2 {
+                top: 35%;
+                left: 16%;
+                width: 657px;
+            }
+
+            @include breakpoints-rotate-3 {
+                top: 35%;
+                left: 16%;
+                width: 614px;
+            }
+
+            @include breakpoints-rotate-4 {
+                top: 35%;
+                left: 9%;
+                width: 614px;
+            }
+
+            @include breakpoints-rotate-5 {
+                top: 31%;
+                left: 9%;
+                width: 566px;
+            }
+        }
+
+        .roadmap-container {
+            padding: 0 1.5rem;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @include breakpoints-1 {
+                padding: 0 5%;
+            }
+
+            @include breakpoints-2 {
+                padding: 0 8%;
+            }
+
+
+            @include breakpoints-3 {
+                width: 100%;
+                height: 100%;
+                padding: unset;
+            }
+
+            @include breakpoints-4 {
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                overflow-y: scroll;
+                gap: 43px;
+                height: 75%;
+
+                &::-webkit-scrollbar {
+                    width: 0 !important;
+                    display: none;
+                }
+            }
+
+            .roadmap-item {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                width: 200px;
+                gap: 10px;
+                max-height: 400px;
+                // animation-name: animationhide;
+                // animation-duration: 4s;
+
+
+                &:nth-child(1) {
+                    transform: translateY(140px);
+
+                    @include breakpoints-1 {
+                        transform: translateY(101px);
+                    }
+
+                    @include breakpoints-2 {
+                        transform: translateY(-4px);
+                    }
+
+                    @include breakpoints-3 {
+                        transform: translateY(46px);
+                    }
+
+                    @include breakpoints-4 {
+                        transform: unset;
+                    }
+
+                    @include breakpoints-rotate-1 {
+                        transform: translateY(55px);
+                    }
+
+                    @include breakpoints-rotate-3 {
+                        transform: translateY(47px);
+                    }
+
+                    @include breakpoints-rotate-4 {
+                        transform: translateY(74px);
+                    }
+
+                    @include breakpoints-rotate-5 {
+                        transform: translateY(41px);
+                    }
+
+                }
+
+                &:nth-child(2) {
+                    transform: translateY(61px);
+
+                    @include breakpoints-1 {
+                        transform: translateY(24px);
+                    }
+
+                    @include breakpoints-2 {
+                        transform: translateY(-76px);
+                    }
+
+                    @include breakpoints-3 {
+                        transform: translateY(-28px);
+                    }
+
+                    @include breakpoints-4 {
+                        transform: unset;
+                    }
+
+                    @include breakpoints-rotate-1 {
+                        transform: translateY(-19px);
+                    }
+
+                    @include breakpoints-rotate-2 {
+                        transform: translateY(-15px);
+                    }
+
+                    @include breakpoints-rotate-3 {
+                        transform: translateY(-20px);
+                    }
+
+                    @include breakpoints-rotate-4 {
+                        transform: translateY(4px);
+                    }
+
+                    @include breakpoints-rotate-5 {
+                        transform: translateY(-29px);
+                    }
+                }
+
+                &:nth-child(3) {
+                    transform: translateY(-16px);
+
+                    @include breakpoints-1 {
+                        transform: translateY(-43px);
+                    }
+
+                    @include breakpoints-2 {
+                        transform: translateY(-109px);
+                    }
+
+                    @include breakpoints-3 {
+                        transform: translateY(-61px);
+                    }
+
+                    @include breakpoints-4 {
+                        transform: unset;
+                    }
+
+                    @include breakpoints-rotate-1 {
+                        transform: translateY(-57px);
+                    }
+
+                    @include breakpoints-rotate-2 {
+                        transform: translateY(-50px);
+                    }
+
+                    @include breakpoints-rotate-3 {
+                        transform: translateY(-51px);
+                    }
+
+                    @include breakpoints-rotate-4 {
+                        transform: translateY(-29px);
+                    }
+
+                    @include breakpoints-rotate-5 {
+                        transform: translateY(-43px);
+                    }
+                }
+
+                &:nth-child(4) {
+                    transform: translateY(-81px);
+
+                    @include breakpoints-1 {
+                        transform: translateY(-97px);
+                    }
+
+                    @include breakpoints-2 {
+                        transform: translateY(-142px);
+                    }
+
+                    @include breakpoints-3 {
+                        transform: translateY(-96px);
+                    }
+
+                    @include breakpoints-4 {
+                        transform: unset;
+                    }
+
+                    @include breakpoints-rotate-1 {
+                        transform: translateY(-91px);
+                    }
+
+                    @include breakpoints-rotate-2 {
+                        transform: translateY(-83px);
+                    }
+
+                    @include breakpoints-rotate-3 {
+                        transform: translateY(-69px);
+                    }
+
+                    @include breakpoints-rotate-4 {
+                        transform: translateY(-61px);
+                    }
+
+                    @include breakpoints-rotate-5 {
+                        transform: translateY(-71px);
+                    }
+                }
+
+                &:nth-child(5) {
+                    transform: translateY(-170px);
+
+                    @include breakpoints-1 {
+                        transform: translateY(-172px);
+                    }
+
+                    @include breakpoints-2 {
+                        transform: translateY(-200px);
+                    }
+
+                    @include breakpoints-3 {
+                        transform: translateY(-156px);
+                    }
+
+                    @include breakpoints-4 {
+                        transform: unset;
+                    }
+
+                    @include breakpoints-rotate-1 {
+                        transform: translateY(-152px);
+                    }
+
+                    @include breakpoints-rotate-2 {
+                        transform: translateY(-143px);
+                    }
+
+                    @include breakpoints-rotate-3 {
+                        transform: translateY(-125px);
+                    }
+
+                    @include breakpoints-rotate-4 {
+                        transform: translateY(-118px);
+                    }
+
+                    @include breakpoints-rotate-5 {
+                        transform: translateY(-123px);
+                    }
+                }
+
+                &:nth-child(6) {
+                    transform: translateY(-243px);
+
+                    @include breakpoints-1 {
+                        transform: translateY(-223px);
+                    }
+
+                    @include breakpoints-2 {
+                        transform: translateY(-246px);
+                    }
+
+                    @include breakpoints-3 {
+                        transform: translateY(-201px);
+                    }
+
+                    @include breakpoints-4 {
+                        transform: unset;
+                    }
+
+                    @include breakpoints-rotate-1 {
+                        transform: translateY(-201px);
+                    }
+
+                    @include breakpoints-rotate-2 {
+                        transform: translateY(-187px);
+                    }
+
+                    @include breakpoints-rotate-3 {
+                        transform: translateY(-169px);
+                    }
+
+                    @include breakpoints-rotate-4 {
+                        transform: translateY(-165px);
+                    }
+
+                    @include breakpoints-rotate-5 {
+                        transform: translateY(-152px);
+                    }
+                }
+
+                .roadmap-item__months--bg {
+                    background: linear-gradient(to right, #F70FFF, #12D6DF);
+                    border-radius: 50%;
+                    width: 100px;
+                    height: 100px;
+                    padding: 2px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    @include breakpoints-2 {
+                        width: 70px;
+                        height: 70px;
+                    }
+
+                    .roadmap-item__months {
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 30px;
+                        text-align: center;
+                        color: $text-color;
+                        border-radius: 50%;
+                        width: 100%;
+                        height: 100%;
+                        background: #1D2A55;
+                        @include flex(center, center);
+
+                        @include breakpoints-2 {
+                            font-size: 16px;
+                        }
+                    }
+                }
+
+                .roadmap-item__line {
+                    object-fit: cover;
+                    width: 25px;
+                }
+
+                .roadmap-item__text {
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 26px;
+                    text-align: center;
+                    color: $text-color;
+
+                    @include breakpoints-2 {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+
+
+
+@keyframes animationhide {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0.25;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    75% {
+        opacity: 0.75;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

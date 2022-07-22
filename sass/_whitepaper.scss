@@ -1,0 +1,315 @@
+.whitepaper {
+    background-image: url(../images/bg-whitepaper.png);
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 1080px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+
+    @include breakpoints-3 {
+        height: 896px;
+    }
+
+    @include breakpoints-6 {
+        height: 896px;
+        background-image: url(../images/bg-whitepaper-mobile.png);
+    }
+
+    &-heading {
+        position: relative;
+        width: 100%;
+        height: 8rem;
+        margin-top: 16rem;
+        margin-bottom: 6rem;
+
+        @include breakpoints-2 {
+            margin: 9.2rem 0 9rem 0;
+        }
+
+        @include breakpoints-3 {
+            margin: unset;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        @include breakpoints-6 {
+            margin-bottom: 25px;
+        }
+
+
+        &__bg {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: fit-content;
+
+            @include breakpoints-4 {
+
+                &::after,
+                &::before {
+                    display: none;
+                }
+            }
+
+
+            p {
+                font-size: 6.4rem;
+                line-height: 8rem;
+
+                @include breakpoints-6 {
+                    line-height: unset;
+
+                }
+
+            }
+        }
+
+        &__text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            h2 {
+                font-weight: 700;
+                font-size: 3.5rem;
+                line-height: 56px;
+                text-align: center;
+                color: $text-color;
+                text-shadow: 0px 0px 4px rgba(51, 252, 255, 0.45);
+
+            }
+        }
+    }
+
+    .container {
+        width: 100%;
+        transform: translateY(15px);
+
+        @include breakpoints-2 {
+            transform: unset;
+
+        }
+
+        .whitepaper-container {
+            @include flex(center, space-between);
+            gap: 10.5rem;
+
+            @include breakpoints-2 {
+                flex-direction: column-reverse;
+                gap: 5.5rem;
+
+            }
+
+            @include breakpoints-6 {
+                align-items: start;
+                gap: 3.8rem;
+
+            }
+
+            .whitepaper-caption {
+                width: 525px;
+                height: 354px;
+
+                @include breakpoints-2 {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    height: unset;
+                    width: 80%;
+                    margin-bottom: 30px;
+
+                }
+
+
+                @include breakpoints-3 {
+                    width: 100%;
+
+                }
+
+                @include breakpoints-6 {
+                    align-items: flex-start;
+
+                }
+
+
+                &__title {
+                    h2 {
+                        font-weight: 700;
+                        font-size: 3rem;
+                        line-height: 2.4rem;
+                        color: $text-color;
+
+                        @include breakpoints-2 {
+                            font-size: 2.5rem;
+
+                        }
+                    }
+
+                }
+
+                &__text {
+                    margin: 3.2rem 0 4.4rem 0;
+
+                    @include breakpoints-3 {
+                        margin: 2.2rem 0 2.4rem 0;
+                    }
+
+                    p {
+                        font-weight: 300;
+                        font-size: 1.6rem;
+                        line-height: 2.4rem;
+                        color: $text-color;
+                        margin-bottom: 12px;
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+
+                        @include breakpoints-2 {
+                            // font-size: 1.4rem;
+
+                        }
+
+                        @include breakpoints-3 {
+                            text-align: center;
+                        }
+
+                        @include breakpoints-4 {
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            -webkit-line-clamp: 10;
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                        }
+
+                        @include breakpoints-6 {
+                            text-align: left;
+                            margin-bottom: 1.8rem;
+
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+                        }
+
+
+                    }
+                }
+
+                &__button {
+                    width: 24.2rem;
+                    height: 5rem;
+                    background-image: url(../images/bg-button-2.png);
+                    background-repeat: no-repeat;
+                    background-size: 100% 100%;
+                    background-position: center center;
+                    @include flex(center, center);
+                    gap: 0.8rem;
+
+                    @include breakpoints-2 {
+
+                        width: 242px;
+                        height: 50px;
+
+
+                    }
+
+                    a {
+                        font-weight: 700;
+                        font-size: 2rem;
+                        line-height: 2.8rem;
+                    }
+                }
+            }
+
+            .whitepaper-item {
+                height: auto;
+                width: 610px;
+                // background: #153169;
+                clip-path: polygon(3% 0, 97% 0, 100% 4%, 100% 95%, 97% 100%, 3% 100%, 0 95%, 0 5%);
+
+                video {
+                    clip-path: polygon(3% 0, 97% 0, 100% 4%, 100% 95%, 97% 100%, 3% 100%, 0 95%, 0 5%);
+                    width: 100%;
+                    height: 100%;
+                }
+
+                @include breakpoints-2 {
+                    width: 580px;
+                }
+
+                @include breakpoints-3 {
+                    width: 475px;
+                }
+
+                @include breakpoints-4 {
+                    width: 430px;
+                }
+
+                @include breakpoints-4 {
+                    width: 430px;
+                }
+
+                @include breakpoints-5 {
+                    width: 382px;
+                }
+
+                @include breakpoints-6 {
+                    width: 327px;
+                    margin-left: auto;
+                }
+
+                @include breakpoints-7 {
+                    width: 300px;
+                }
+
+
+
+
+            }
+        }
+    }
+
+    &-bgbottom {
+        margin-top: auto;
+        margin-bottom: 50px;
+
+        p {
+            font-size: 22rem;
+            font-weight: 700;
+
+            @include breakpoints-1 {
+                font-size: 15.4rem;
+            }
+
+            @include breakpoints-2 {
+                font-size: 14rem;
+            }
+
+            @include breakpoints-3 {
+                font-size: 9.4rem;
+            }
+
+            @include breakpoints-4 {
+                font-size: 7.4rem;
+            }
+
+            @include breakpoints-5 {
+                font-size: 7.6rem;
+            }
+
+            @include breakpoints-6 {
+                position: absolute;
+                bottom: 30px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+}

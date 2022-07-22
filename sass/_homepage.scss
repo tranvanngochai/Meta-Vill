@@ -1,0 +1,799 @@
+.homepage {
+    height: 1070px;
+    position: relative;
+    overflow: hidden;
+
+    @include breakpoints-1 {
+        height: 76rem;
+
+    }
+
+    @include breakpoints-2 {
+        height: 57rem;
+
+    }
+
+    @include breakpoints-3 {
+        height: 49rem;
+    }
+
+    @include breakpoints-4 {
+        height: 384px;
+    }
+
+    @include breakpoints-5 {
+        height: 330px;
+    }
+
+    @include breakpoints-6 {
+        height: 646px;
+    }
+
+    @include breakpoints-6 {
+        height: 590px;
+    }
+
+    @include breakpoints-rotate-1 {
+        margin-top: 60px;
+        height: 52rem;
+    }
+
+    @include breakpoints-rotate-2 {
+        height: 50rem;
+    }
+
+    @include breakpoints-rotate-3 {
+        height: 47rem;
+    }
+
+    @include breakpoints-rotate-4 {
+        margin-top: unset;
+    }
+
+    @include breakpoints-rotate-5 {
+        height: 43rem;
+    }
+
+
+    &-mobile {
+        padding: 1.6rem 1.5rem;
+        @include flex(center, space-between);
+        display: none;
+        background: linear-gradient(90.41deg, #330C5E -0.18%, #0F2A58 92.19%);
+        height: 60px;
+
+        @include breakpoints-3 {
+            display: block;
+            z-index: 300;
+            display: flex;
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100%;
+
+        }
+
+        @include breakpoints-rotate-1 {
+            display: block;
+            z-index: 300;
+            display: flex;
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100%;
+
+        }
+
+        .mobile-logo {
+            img {
+                object-fit: cover;
+            }
+        }
+
+        .mobile-toggle {
+            display: none;
+            cursor: pointer;
+
+            @include breakpoints-3 {
+                display: block;
+
+                &.active {
+                    .bar:nth-child(2) {
+                        opacity: 0;
+                    }
+
+                    .bar:nth-child(1) {
+                        transform: translateY(8px) rotate(45deg);
+                    }
+
+                    .bar:nth-child(3) {
+                        transform: translateY(-8px) rotate(-45deg);
+                    }
+                }
+            }
+
+            @include breakpoints-rotate-1 {
+                display: block;
+
+                &.active {
+                    .bar:nth-child(2) {
+                        opacity: 0;
+                    }
+
+                    .bar:nth-child(1) {
+                        transform: translateY(8px) rotate(45deg);
+                    }
+
+                    .bar:nth-child(3) {
+                        transform: translateY(-8px) rotate(-45deg);
+                    }
+                }
+            }
+
+            .bar {
+                display: block;
+                width: 25px;
+                height: 3px;
+                margin: 5px auto;
+                transition: all 0.3s ease-in-out;
+                background-color: white;
+            }
+        }
+    }
+
+    &-videobg {
+        width: 100%;
+        z-index: 1;
+
+        @include breakpoints-3 {
+            margin-top: 60px
+        }
+
+        @include breakpoints-6 {
+            display: none;
+        }
+    }
+
+    &-videobg-mobile {
+        width: 100%;
+        z-index: 1;
+        display: none;
+
+        @include breakpoints-6 {
+            margin-top: 60px;
+            display: block;
+
+        }
+    }
+
+    &-header {
+        @include flex(center, space-between);
+        flex-wrap: nowrap;
+        width: 100%;
+        transition: right 0.5s ease-in;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        &.active {
+            right: 0;
+            transition: right 0.5s ease-in;
+        }
+
+
+
+        @include breakpoints-3 {
+            position: fixed;
+            top: 60px;
+            right: -100%;
+            background: linear-gradient(90.41deg, #330C5E -0.18%, #0F2A58 92.19%);
+            min-height: 94vh;
+            width: 100%;
+            z-index: 200;
+            flex-direction: column-reverse;
+            justify-content: center;
+            gap: 4rem;
+
+
+        }
+
+        @include breakpoints-5 {
+            gap: 3rem;
+        }
+
+        @include breakpoints-6 {
+            gap: 2rem;
+        }
+
+        @include breakpoints-8 {
+            gap: 1rem;
+        }
+
+
+        @include breakpoints-rotate-1 {
+            position: fixed;
+            top: 60px;
+            right: -100%;
+            background: linear-gradient(90.41deg, #330C5E -0.18%, #0F2A58 92.19%);
+            min-height: 94vh;
+            width: 100%;
+            z-index: 200;
+            justify-content: center;
+            gap: 4rem;
+            overflow-y: scroll;
+            min-height: unset;
+            height: calc(100vh - 60px);
+            flex-flow: wrap row;
+        }
+
+
+        .header-credit {
+            display: none;
+
+            p {
+                font-weight: 400;
+                font-size: 1.4rem;
+                line-height: 2.4rem;
+                text-align: center;
+                color: $text-color;
+            }
+
+            @include breakpoints-3 {
+                margin-bottom: 1.4rem;
+                display: block;
+            }
+
+            @include breakpoints-rotate-1 {
+                margin-bottom: 1.4rem;
+                display: block;
+                width: 100%;
+                order: 5;
+            }
+        }
+
+        .header-line {
+            display: none;
+
+            @include breakpoints-3 {
+                display: block;
+            }
+
+            @include breakpoints-rotate-1 {
+                display: block;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                order: 4;
+            }
+        }
+
+        .header-left {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin: 6.5rem 10rem;
+
+            @include breakpoints-1 {
+                margin: 0 5rem;
+            }
+
+            @include breakpoints-2 {
+                margin: 1.5rem 1rem;
+                gap: 0.5rem;
+            }
+
+            @include breakpoints-3 {
+                margin: unset;
+                gap: 1.5rem;
+            }
+
+            @include breakpoints-rotate-1 {
+                margin: unset;
+                width: 100%;
+                order: 3;
+            }
+
+            &__icon {
+                background-image: url(../images/line-link-icon.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                width: 5rem;
+                height: 5rem;
+                cursor: pointer;
+                transition: all 0.3s ease-out;
+
+                &:hover {
+                    transform: scale(1.1);
+
+                    i {
+                        color: $hover-color;
+                    }
+
+                }
+
+                @include flex(center, center);
+
+                @include breakpoints-2 {
+                    transform: scale(0.8);
+                }
+
+                @include breakpoints-3 {
+                    transform: unset
+                }
+
+                @include breakpoints-rotate-1 {
+                    transform: unset
+                }
+
+                i {
+                    font-size: 2rem;
+                    color: $text-color;
+
+                }
+            }
+        }
+
+        .header-nav {
+            z-index: 100;
+            margin-left: 4rem;
+            margin-top: 18.9rem;
+            position: absolute;
+            top: 15%;
+            left: 0;
+            position: fixed;
+
+            @include breakpoints-2 {
+                margin-left: 2rem;
+
+            }
+
+            @include breakpoints-3 {
+                z-index: 200;
+                margin: unset;
+                position: unset;
+
+            }
+
+            @include breakpoints-rotate-1 {
+                z-index: 200;
+                margin: unset;
+                position: unset;
+                width: 100%;
+                order: 2;
+
+            }
+
+            .nav-list {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                gap: 3.2rem;
+
+                @include breakpoints-2 {
+                    gap: 2rem;
+                }
+
+                @include breakpoints-3 {
+                    gap: 3rem;
+                }
+
+                @include breakpoints-5 {
+                    gap: 2rem;
+                }
+
+                @include breakpoints-6 {
+                    gap: 2rem;
+                }
+
+                @include breakpoints-7 {
+                    gap: 2rem;
+                }
+
+                @include breakpoints-rotate-1 {
+                    gap: 3rem;
+                }
+
+
+                &__item {
+                    transition: all 0.3s linear;
+                    z-index: 100;
+
+
+
+                    @include breakpoints-3 {
+                        margin: auto;
+
+                        &:hover {
+                            .item-link {
+                                .line {
+                                    height: 2px;
+                                    background-color: $text-color;
+                                }
+
+                                p {
+                                    color: $hover-color;
+                                }
+                            }
+
+                        }
+
+
+
+                    }
+
+                    @include breakpoints-rotate-1 {
+                        margin: auto;
+
+                        &:hover {
+                            .item-link {
+                                .line {
+                                    height: 2px;
+                                    background-color: $text-color;
+                                }
+
+                                p {
+                                    color: $hover-color;
+                                }
+                            }
+
+                        }
+
+
+
+                    }
+
+                    &.active {
+                        .item-link {
+                            h3.menu-number {
+                                color: #33FCFF;
+                                opacity: 1;
+                            }
+
+                            .line {
+                                opacity: 1;
+                            }
+
+                            p {
+                                opacity: 1;
+                            }
+                        }
+
+                        @include breakpoints-3 {
+                            .item-link {
+                                .line {
+                                    height: 2px;
+                                    background-color: $hover-color;
+                                }
+
+                                p {
+                                    color: $hover-color;
+                                }
+                            }
+                        }
+
+                        @include breakpoints-rotate-1 {
+                            .item-link {
+                                .line {
+                                    height: 2px;
+                                    background-color: $hover-color;
+                                }
+
+                                p {
+                                    color: $hover-color;
+                                }
+                            }
+                        }
+                    }
+
+                    &.hovermouse {
+                        // opacity: 1.5;
+
+                        .item-link {
+                            h3.menu-number {
+                                color: #33FCFF;
+                                opacity: 1;
+                            }
+
+                            .line {
+                                opacity: 1;
+                            }
+
+                            p {
+                                opacity: 1;
+                            }
+                        }
+
+                        @include breakpoints-3 {
+                            .item-link {
+                                .line {
+                                    height: 2px;
+                                    background-color: $hover-color;
+                                }
+
+                                p {
+                                    color: $hover-color;
+                                }
+                            }
+                        }
+
+                        @include breakpoints-rotate-1 {
+                            .item-link {
+                                .line {
+                                    height: 2px;
+                                    background-color: $hover-color;
+                                }
+
+                                p {
+                                    color: $hover-color;
+                                }
+                            }
+                        }
+                    }
+
+                    a.item-link {
+                        transition: all 0.3s linear;
+                        display: flex;
+                        align-items: center;
+                        gap: 0.8rem;
+
+                        h3.menu-number {
+                            font-weight: 700;
+                            font-size: 2rem;
+                            line-height: 2.8rem;
+                            text-align: center;
+                            color: rgba(255, 255, 255, 0.6);
+                            transition: all 0.5s ease-in;
+
+                            @include breakpoints-3 {
+                                color: $text-color;
+                            }
+
+                            @include breakpoints-rotate-1 {
+                                color: $text-color;
+                            }
+
+                            @include breakpoints-6 {
+                                font-size: 1.6rem;
+                                line-height: 2.4rem;
+                            }
+
+                        }
+
+                        .line {
+                            height: 2px;
+                            background-color: $text-color;
+                            width: 2.4rem;
+                            opacity: 0;
+                            transition: all 0.5s ease-in;
+
+                            @include breakpoints-3 {
+                                opacity: 1;
+                            }
+
+                            @include breakpoints-rotate-1 {
+                                opacity: 1;
+                            }
+
+                            @include breakpoints-6 {
+                                width: 7px;
+                            }
+                        }
+
+                        p {
+                            font-weight: 700;
+                            font-size: 1.6rem;
+                            line-height: 2.4rem;
+                            color: $text-color;
+                            opacity: 0;
+                            transition: all 0.5s ease-in;
+
+                            @include breakpoints-3 {
+                                opacity: 1;
+                            }
+
+                            @include breakpoints-rotate-1 {
+                                opacity: 1;
+                            }
+                        }
+                    }
+
+                }
+            }
+
+        }
+
+        .header-right {
+            display: flex;
+            justify-content: center;
+            gap: 2.5rem;
+            margin: 5.6rem 10rem;
+
+            @include breakpoints-1 {
+                gap: 2rem;
+                margin: 2rem -3rem;
+                transform: scale(0.8);
+            }
+
+            @include breakpoints-2 {
+                margin: 1rem -72px;
+            }
+
+            @include breakpoints-3 {
+                margin: unset;
+                transform: unset;
+            }
+
+            @include breakpoints-rotate-1 {
+                margin: unset;
+                width: 100%;
+                order: 1;
+                transform: unset;
+            }
+
+            @include breakpoints-6 {}
+
+
+
+
+            &__button {
+                background-image: url(../images/bg-button.png);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                background-position: center center;
+
+                &.marketplace {
+                    width: 29.5rem;
+                    height: 6.7rem;
+                    padding: 13px 63px 21px 47px;
+
+                    @include breakpoints-2 {
+                        width: unset;
+                        margin-right: -60px;
+
+                        &:hover {
+                            transform: scale(0.85);
+                        }
+                    }
+
+                    @include breakpoints-3 {
+                        width: unset;
+                        margin-right: unset;
+
+                        &:hover {
+                            transform: scale(1.05);
+                        }
+                    }
+                }
+
+                &.gotoapp {
+                    width: 28.5rem;
+                    height: 6.7rem;
+                    padding: 13px 79px 21px 67px;
+
+                    @include breakpoints-2 {
+                        width: unset;
+
+                        &:hover {
+                            transform: scale(0.85);
+                        }
+                    }
+
+                    @include breakpoints-3 {
+                        &:hover {
+                            transform: scale(1.05);
+                        }
+                    }
+
+                    @include breakpoints-rotate-1 {
+                        &:hover {
+                            transform: scale(1.05);
+                        }
+                    }
+                }
+
+                @include breakpoints-2 {
+                    transform: scale(0.8);
+                }
+
+                @include breakpoints-3 {
+                    transform: unset;
+                }
+
+                @include breakpoints-rotate-1 {
+                    transform: unset;
+                }
+
+                @include breakpoints-7 {
+                    transform: scale(0.8);
+                }
+
+                &:nth-child(1) {
+                    @include breakpoints-3 {
+                        display: none;
+                    }
+
+                    @include breakpoints-rotate-1 {
+                        display: none;
+                    }
+                }
+
+                a {
+                    font-weight: 700;
+                    font-size: 2.4rem;
+                    line-height: 3.2rem;
+                    text-transform: uppercase;
+                    color: $text-color;
+                }
+
+            }
+        }
+    }
+
+    &-button {
+        width: 25.2rem;
+        height: 5rem;
+        background-image: url(../images/bg-button-2.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center center;
+        @include flex(center, center);
+        gap: 1.6rem;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: all 0.2s linear;
+
+        @include breakpoints-3 {
+            width: 21rem;
+            height: 4rem;
+            top: 60%;
+        }
+
+        @include breakpoints-4 {
+            top: 63%;
+        }
+
+        @include breakpoints-6 {
+            width: 252px;
+            height: 50px;
+            top: 43%;
+        }
+
+        @include breakpoints-7 {
+            width: 239px;
+            height: 45px;
+        }
+
+
+        &:hover {
+            width: 26rem;
+            height: 5.5rem;
+
+            @include breakpoints-3 {
+                width: 22rem;
+                height: 4.5rem;
+            }
+
+            @include breakpoints-6 {
+                width: 260px;
+                height: 55px;
+            }
+
+            @include breakpoints-7 {
+                width: 255px;
+                height: 55px;
+            }
+        }
+
+        a {
+            font-weight: 700;
+            font-size: 2rem;
+            line-height: 2.8rem;
+            color: $text-color;
+        }
+
+    }
+
+}

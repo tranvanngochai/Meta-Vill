@@ -1,0 +1,13 @@
+.copyright {
+    height: 56px;
+    background: #0E093E;
+    @include flex(center, center);
+
+    p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: $text-color;
+    }
+}

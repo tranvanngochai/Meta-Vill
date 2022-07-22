@@ -1,0 +1,705 @@
+.enjoytoearn {
+    background-image: url(../images/bg_enjoytoearn.png);
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 1080px;
+    overflow: hidden;
+
+    @include breakpoints-3 {
+        height: 896px;
+    }
+
+    @include breakpoints-6 {
+        background-image: url(../images/bg_enjoytoearn-mobile.png);
+    }
+
+    @include breakpoints-8 {
+        height: 845px;
+    }
+
+    @include breakpoints-rotate-1 {
+        height: 950px;
+    }
+
+    @include breakpoints-rotate-4 {
+        height: 860px;
+    }
+
+    .container {
+        height: 100%;
+
+        .enjoytoearn-container {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            .enjoytoearn-heading {
+                width: 100%;
+                position: relative;
+                width: 100%;
+                height: 8rem;
+                margin: 9.2rem 0 3rem 0;
+
+                @include breakpoints-3 {
+                    margin: 3rem 0 2rem 0;
+                }
+
+                @include breakpoints-4 {
+                    width: 200%;
+                }
+
+                &__bg {
+                    position: absolute;
+                    width: 100%;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    max-width: fit-content;
+
+                    @include breakpoints-4 {
+
+                        &::after,
+                        &::before {
+                            display: none;
+                        }
+                    }
+
+                    p {
+                        font-size: 6.4rem;
+
+                    }
+
+
+                }
+
+                &__text {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 100%;
+
+                    h2 {
+                        font-weight: 700;
+                        font-size: 48px;
+                        line-height: 56px;
+                        text-align: center;
+                        color: $text-color;
+                        text-shadow: 0px 0px 4px rgba(51, 252, 255, 0.45);
+
+                        @include breakpoints-4 {
+                            font-size: 3.5rem;
+                        }
+                    }
+                }
+
+            }
+
+
+
+            .enjoytoearn-center {
+                position: relative;
+                width: 100%;
+
+                img {
+                    object-fit: cover;
+                    margin: auto;
+
+                    &.img-desktop {
+                        display: block;
+
+                        @include breakpoints-2 {
+                            transform: scale(0.8);
+                        }
+
+                        @include breakpoints-3 {
+                            display: none;
+                        }
+
+                        @include breakpoints-rotate-1 {
+                            display: none;
+                        }
+                    }
+
+                    &.img-mobile {
+                        display: none;
+
+                        @include breakpoints-3 {
+                            display: block;
+                        }
+
+                        @include breakpoints-rotate-1 {
+                            display: block;
+                        }
+                    }
+                }
+
+                .branch-top__left,
+                .branch-bottom__left,
+                .branch-top__right,
+                .branch-bottom__right {
+                    position: absolute;
+
+                    @include breakpoints-3 {
+                        width: 55px;
+                        height: 55px;
+                    }
+
+                    @include breakpoints-rotate-1 {
+                        width: 55px;
+                        height: 55px;
+                    }
+
+                    p {
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 28px;
+                        color: $text-color;
+
+                        @include breakpoints-2 {
+                            font-size: 23px;
+                        }
+
+                        @include breakpoints-3 {
+                            display: none;
+                        }
+
+                        @include breakpoints-rotate-1 {
+                            display: none;
+                        }
+
+                    }
+
+                    img {
+                        display: none;
+
+                        @include breakpoints-3 {
+                            display: block;
+                        }
+
+                        @include breakpoints-rotate-1 {
+                            display: block;
+                        }
+                    }
+                }
+
+                .branch-top__left {
+                    top: 34%;
+                    left: 37px;
+
+                    @include breakpoints-2 {
+                        left: -9px;
+                        top: 36%;
+                    }
+
+                    @include breakpoints-3 {
+                        top: 20%;
+                        left: 224px;
+
+                        .circle-top-left {
+                            display: block;
+                        }
+
+                        .circle-top-left-active {
+                            display: none;
+                        }
+
+                        &.active {
+                            .circle-top-left {
+                                display: none;
+                            }
+
+                            .circle-top-left-active {
+                                display: block;
+                            }
+                        }
+                    }
+
+                    @include breakpoints-4 {
+                        top: 20%;
+                        left: 129px;
+                    }
+
+                    @include breakpoints-5 {
+                        top: 20%;
+                        left: 80px;
+                    }
+
+                    @include breakpoints-6 {
+                        left: 48px;
+                    }
+
+                    @include breakpoints-7 {
+                        left: 42px;
+                    }
+
+                    @include breakpoints-8 {
+                        left: 39px;
+                    }
+
+                    @include breakpoints-rotate-1 {
+                        top: 20%;
+                        left: 306px;
+
+                        .circle-top-left {
+                            display: block;
+                        }
+
+                        .circle-top-left-active {
+                            display: none;
+                        }
+
+                        &.active {
+                            .circle-top-left {
+                                display: none;
+                            }
+
+                            .circle-top-left-active {
+                                display: block;
+                            }
+                        }
+                    }
+
+                    @include breakpoints-rotate-2 {
+                        left: 290px;
+                    }
+
+                    @include breakpoints-rotate-3 {
+                        left: 263px;
+                    }
+
+                    @include breakpoints-rotate-4 {
+                        left: 210px;
+                    }
+
+                    @include breakpoints-rotate-5 {
+                        left: 176px;
+                    }
+                }
+
+                .branch-bottom__left {
+                    bottom: 23%;
+                    left: 185px;
+
+                    @include breakpoints-1 {
+                        bottom: 22%;
+                        left: 175px;
+                    }
+
+                    @include breakpoints-2 {
+                        left: 93px;
+                        bottom: 28%;
+                    }
+
+                    @include breakpoints-3 {
+                        top: 50%;
+                        left: 240px;
+
+                        .circle-bottom-left {
+                            display: block;
+                        }
+
+                        .circle-bottom-left-active {
+                            display: none;
+                        }
+
+                        &.active {
+                            .circle-bottom-left {
+                                display: none;
+                            }
+
+                            .circle-bottom-left-active {
+                                display: block;
+                            }
+                        }
+                    }
+
+                    @include breakpoints-4 {
+                        top: 54%;
+                        left: 156px;
+                    }
+
+                    @include breakpoints-5 {
+                        left: 107px;
+                    }
+
+                    @include breakpoints-6 {
+                        left: 72px;
+                    }
+
+                    @include breakpoints-7 {
+                        left: 72px;
+                    }
+
+                    @include breakpoints-rotate-1 {
+                        top: 50%;
+                        left: 318px;
+
+                        .circle-bottom-left {
+                            display: block;
+                        }
+
+                        .circle-bottom-left-active {
+                            display: none;
+                        }
+
+                        &.active {
+                            .circle-bottom-left {
+                                display: none;
+                            }
+
+                            .circle-bottom-left-active {
+                                display: block;
+                            }
+                        }
+                    }
+
+                    @include breakpoints-rotate-2 {
+                        left: 300px;
+                    }
+
+                    @include breakpoints-rotate-3 {
+                        left: 273px;
+                    }
+
+                    @include breakpoints-rotate-4 {
+                        left: 219px;
+                    }
+
+                    @include breakpoints-rotate-5 {
+                        left: 185px;
+                    }
+
+                }
+
+                .branch-top__right {
+                    top: 34%;
+                    right: 6px;
+
+                    @include breakpoints-1 {
+                        bottom: 25%;
+                        right: 18px;
+                    }
+
+
+                    @include breakpoints-2 {
+                        right: -52px;
+                        top: 36%;
+                    }
+
+
+                    @include breakpoints-3 {
+                        top: 15%;
+                        right: 242px;
+
+                        .circle-top-right {
+                            display: block;
+                        }
+
+                        .circle-top-right-active {
+                            display: none;
+                        }
+
+                        &.active {
+                            .circle-top-right {
+                                display: none;
+                            }
+
+                            .circle-top-right-active {
+                                display: block;
+                            }
+                        }
+                    }
+
+                    @include breakpoints-4 {
+                        top: 16%;
+                        right: 138px;
+
+                    }
+
+                    @include breakpoints-5 {
+                        top: 16%;
+                        right: 92px;
+                    }
+
+                    @include breakpoints-6 {
+                        right: 57px;
+                    }
+
+                    @include breakpoints-7 {
+                        right: 52px;
+                    }
+
+                    @include breakpoints-8 {
+                        right: 47px;
+                    }
+
+
+                    @include breakpoints-rotate-1 {
+                        top: 15%;
+                        right: 322px;
+
+                        .circle-top-right {
+                            display: block;
+                        }
+
+                        .circle-top-right-active {
+                            display: none;
+                        }
+
+                        &.active {
+                            .circle-top-right {
+                                display: none;
+                            }
+
+                            .circle-top-right-active {
+                                display: block;
+                            }
+                        }
+                    }
+
+                    @include breakpoints-rotate-2 {
+                        right: 306px;
+                    }
+
+                    @include breakpoints-rotate-3 {
+                        right: 279px;
+                    }
+
+                    @include breakpoints-rotate-4 {
+                        right: 226px;
+                    }
+
+                    @include breakpoints-rotate-5 {
+                        right: 192px;
+                    }
+
+
+                }
+
+                .branch-bottom__right {
+                    bottom: 20%;
+                    right: 39px;
+
+                    @include breakpoints-1 {
+                        bottom: 25%;
+                        right: 41px;
+                    }
+
+                    @include breakpoints-2 {
+                        bottom: 30%;
+                        right: -29px;
+                    }
+
+                    @include breakpoints-3 {
+                        bottom: 34%;
+                        right: 233px;
+
+                        .circle-bottom-right {
+                            display: block;
+                        }
+
+                        .circle-bottom-right-active {
+                            display: none;
+                        }
+
+                        &.active {
+                            .circle-bottom-right {
+                                display: none;
+                            }
+
+                            .circle-bottom-right-active {
+                                display: block;
+                            }
+                        }
+                    }
+
+                    @include breakpoints-4 {
+                        bottom: 34%;
+                        right: 135px;
+                    }
+
+                    @include breakpoints-5 {
+                        right: 88px;
+                    }
+
+                    @include breakpoints-6 {
+                        right: 57px;
+                    }
+
+                    @include breakpoints-7 {
+                        right: 49px;
+                        bottom: 35%;
+                    }
+
+                    @include breakpoints-8 {
+                        right: 47px;
+                        bottom: 35%;
+                    }
+
+                    @include breakpoints-rotate-1 {
+                        bottom: 34%;
+                        right: 312px;
+
+                        .circle-bottom-right {
+                            display: block;
+                        }
+
+                        .circle-bottom-right-active {
+                            display: none;
+                        }
+
+                        &.active {
+                            .circle-bottom-right {
+                                display: none;
+                            }
+
+                            .circle-bottom-right-active {
+                                display: block;
+                            }
+                        }
+                    }
+
+                    @include breakpoints-rotate-2 {
+                        right: 298px;
+                    }
+
+                    @include breakpoints-rotate-3 {
+                        right: 270px;
+                    }
+
+                    @include breakpoints-rotate-4 {
+                        right: 216px;
+                    }
+
+                    @include breakpoints-rotate-5 {
+                        right: 182px;
+                    }
+
+                }
+
+            }
+
+
+            .branch-slider {
+                width: 100%;
+                display: none;
+                padding: 50px 0;
+                position: relative;
+
+                @include breakpoints-3 {
+                    display: block;
+                }
+
+                @include breakpoints-rotate-1 {
+                    display: block;
+                }
+
+                .branch-heading {
+                    width: 100%;
+
+                    .heading-item {
+
+                        p {
+                            font-weight: 700;
+                            font-size: 24px;
+                            line-height: 28px;
+                            color: $text-color;
+                            text-align: center;
+                        }
+                    }
+
+                }
+
+                .swiper-pagination {
+                    @include flex(center, center);
+                    display: none;
+                    position: absolute;
+                    bottom: 0;
+
+                    @include breakpoints-3 {
+                        display: flex;
+                    }
+
+                    @include breakpoints-rotate-1 {
+                        display: flex;
+                    }
+
+                    .swiper-pagination-bullet {
+                        width: 10px;
+                        height: 10px;
+                        opacity: 1;
+                        margin: 0 2.3rem;
+                        position: relative;
+                        background-color: $hover-color;
+
+                        @include breakpoints-3 {
+                            margin: 0 1.3rem;
+                        }
+
+                        @include breakpoints-rotate-1 {
+                            margin: 0 1.3rem;
+                        }
+
+                        &-active {
+                            background: linear-gradient(to right, #330C5E, #0F2A58);
+                            border: 1px solid $hover-color;
+                            width: 25px;
+                            height: 25px;
+
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                width: 10px;
+                                height: 10px;
+                                border-radius: 50%;
+                                background-color: $hover-color;
+                            }
+                        }
+                    }
+                }
+            }
+
+
+
+
+        }
+
+
+        .enjoytoearn-button {
+            width: 34.2rem;
+            height: 5rem;
+            @include flex(center, center);
+            gap: 1.4rem;
+            background-image: url(../images/btn-pg.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            margin-top: 6.3rem;
+
+            @include breakpoints-5 {
+                transform: scale(0.8);
+            }
+
+
+            a {
+                font-weight: 700;
+                font-size: 2rem;
+                line-height: 2.8rem;
+
+            }
+
+            img {
+                object-fit: cover;
+            }
+        }
+
+
+
+
+    }
+}

@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>METAVILL</title>
+
+    <!-- // Swiper JS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+    <!-- // font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- // Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lexend:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- wow js  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.css">
+
+
+    <!-- Link CSS  -->
+    <link rel="stylesheet" href="./css/app.css">
+</head>
+
+<body>
+
+    <!-- Home Page  -->
+    <section class="homepage template__section" id="homepage">
+        <div class="homepage-mobile">
+            <div class="mobile-logo">
+                <img src="./images/metvill-logo.png" alt="">
+            </div>
+            <div class="mobile-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+        <video class="homepage-videobg" src="./video/METAVILL-Website-DestopVer-1-2.mp4" playsinline autoplay muted
+            loop>
+        </video>
+        <video class="homepage-videobg-mobile" src="./video/METAVILL-Website-MobileVer-1-2.mp4" playsinline autoplay
+            muted loop>
+        </video>
+        <div class="homepage-header">
+            <div class="header-credit">
+                <p>
+                    Copyright © 2022 Metavill
+                </p>
+            </div>
+
+            <div class="header-line">
+                <img src="./images/line.png" alt="">
+            </div>
+
+            <div class="header-left">
+                <div class="header-left__icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </div>
+                <div class="header-left__icon">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+                <div class="header-left__icon">
+                    <i class="fa-brands fa-pinterest-p"></i>
+                </div>
+                <div class="header-left__icon">
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+
+            <div class="header-nav">
+                <ui class="nav-list">
+                    <li class="nav-list__item active" onmouseover="hoverMouse(this)" onmouseout="hoverMouseOut(this)">
+                        <a class="item-link" href="#homepage">
+                            <h3 class="menu-number">01</h3>
+                            <div class="line"></div>
+                            <p class="menu-item">Homepage</p>
+                        </a>
+                    </li>
+                    <li class="nav-list__item" onmouseover="hoverMouse(this)" onmouseout="hoverMouseOut(this)">
+                        <a class="item-link" href="#whitepaper">
+                            <h3 class="menu-number">02</h3>
+                            <div class="line"></div>
+                            <p class="menu-item">Whitepaper</p>
+                        </a>
+                    </li>
+                    <li class="nav-list__item" onmouseover="hoverMouse(this)" onmouseout="hoverMouseOut(this)">
+                        <a class="item-link" href="#marketplace">
+                            <h3 class="menu-number">03</h3>
+                            <div class="line"></div>
+                            <p class="menu-item">Marketplace</p>
+                        </a>
+                    </li>
+                    <li class="nav-list__item" onmouseover="hoverMouse(this)" onmouseout="hoverMouseOut(this)">
+                        <a class="item-link" href="#enjoytoearn">
+                            <h3 class="menu-number">04</h3>
+                            <div class="line"></div>
+                            <p class="menu-item">Enjoy to Earn</p>
+                        </a>
+                    </li>
+                    <li class="nav-list__item" onmouseover="hoverMouse(this)" onmouseout="hoverMouseOut(this)">
+                        <a class="item-link" href="#advisor">
+                            <h3 class="menu-number">05</h3>
+                            <div class="line"></div>
+                            <p>Advisor</p>
+                        </a>
+                    </li>
+                    <li class="nav-list__item" onmouseover="hoverMouse(this)" onmouseout="hoverMouseOut(this)">
+                        <a class="item-link" href="#ourteam">
+                            <h3 class="menu-number">06</h3>
+                            <div class="line"></div>
+                            <p>Out Team</p>
+                        </a>
+                    </li>
+                    <li class="nav-list__item" onmouseover="hoverMouse(this)" onmouseout="hoverMouseOut(this)">
+                        <a class="item-link" href="#roadmap">
+                            <h3 class="menu-number">07</h3>
+                            <div class="line"></div>
+                            <p class="menu-item">Roadmap</p>
+                        </a>
+                    </li>
+                    <li class="nav-list__item" onmouseover="hoverMouse(this)" onmouseout="hoverMouseOut(this)">
+                        <a class="item-link" href="#ourpartners">
+                            <h3 class="menu-number">08</h3>
+                            <div class="line"></div>
+                            <p class="menu-item">Partners</p>
+                        </a>
+                    </li>
+                    <li class="nav-list__item" onmouseover="hoverMouse(this)" onmouseout="hoverMouseOut(this)">
+                        <a class="item-link" href="#articles">
+                            <h3 class="menu-number">09</h3>
+                            <div class="line"></div>
+                            <p class="menu-item">Articles</p>
+                        </a>
+                    </li>
+                </ui>
+            </div>
+
+            <div class="header-right">
+                <div class="header-right__button marketplace btn">
+                    <a href="comingsoon.html">Marketplace</a>
+                </div>
+                <div class="header-right__button gotoapp btn">
+                    <a href="comingsoon.html">Go to App</a>
+                </div>
+            </div>
+        </div>
+        <div class="homepage-button">
+            <a href="">Explore Now</a>
+            <img src="./images/icon-right.png" alt="">
+        </div>
+
+
+
+    </section>
+    <!-- End Home Page  -->
+
+    <!-- Whitepaper  -->
+    <section class="whitepaper template__section" id="whitepaper">
+
+        <div class="whitepaper-heading wow fadeInDownBig" data-wow-duration="1s">
+            <div class="whitepaper-heading__bg bg_icon">
+                <p class="bg_text">Whitepaper</p>
+            </div>
+            <div class="whitepaper-heading__text">
+                <h2>Whitepaper</h2>
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="whitepaper-container">
+                <div class="whitepaper-caption wow slideInLeft" data-wow-duration="1s">
+                    <div class="whitepaper-caption__title">
+                        <h2>Welcome to Metavill</h2>
+                    </div>
+                    <div class="whitepaper-caption__text">
+                        <p>
+                            When an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            It has survived not only five centuries, but also the leap into electronic typesetting,
+                            remaining essentially unchanged.
+                        </p>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece
+                            of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,
+                            a Latin professor at Hampden-Sydney College in Virginia.</p>
+                    </div>
+                    <div class="whitepaper-caption__button btn">
+                        <a href="">
+                            View More
+                        </a>
+                        <img src="./images/icon-right.png" alt="">
+                    </div>
+                </div>
+                <a href="" class="whitepaper-item wow slideInRight" data-wow-duration="1s">
+                    <video class="whitepaper-videobg" src="./video/METAVILL-Intro-3-1.mp4" playsinline autoplay muted
+                        loop>
+                    </video>
+                </a>
+            </div>
+        </div>
+        <div class="whitepaper-bgbottom">
+            <p class="bg_text">Welcome</p>
+        </div>
+    </section>
+    <!-- End Whitepaper  -->
+
+    <section class="marketplace template__section" id="marketplace">
+        <div class="container">
+            <div class="marketplace-container">
+                <div class="marketplace-listitems scrollbar wow slideInLeft" data-wow-duration="1s">
+                    <a class="marketplace-listitems__link" href="#">
+                        <div class="marketplace-listitems__item">
+                            <div class="bg">
+                                <div class="item--image">
+                                    <p>Coming Soon</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="marketplace-listitems__item--title">
+                            <h2>Meta character</h2>
+                        </div>
+                    </a>
+                    <a class="marketplace-listitems__link" href="#">
+                        <div class="marketplace-listitems__item">
+                            <div class="bg">
+                                <div class="item--image">
+                                    <img src="./images/Dragon_Metavil-1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="marketplace-listitems__item--title">
+                            <h2>Meta pet</h2>
+                        </div>
+                    </a>
+                    <a class="marketplace-listitems__link" href="#">
+                        <div class="marketplace-listitems__item">
+                            <div class="bg">
+                                <div class="item--image">
+                                    <img src="./images/Women_Metavil-1.png" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="marketplace-listitems__item--title">
+                            <h2>Meta content</h2>
+                        </div>
+                    </a>
+                    <a class="marketplace-listitems__link" href="#">
+                        <div class="marketplace-listitems__item">
+                            <div class="bg">
+                                <div class="item--image">
+                                    <img src="./images/REFNFT-space-1.png" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="marketplace-listitems__item--title">
+                            <h2>Meta space</h2>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="marketplace-right wow slideInRight" data-wow-duration="1s">
+                    <div class="swiper-button-next">
+                        <img src="./images/icon-next.png" alt="">
+                    </div>
+                    <div class="swiper-button-prev">
+                        <img src="./images/icon-prev.png" alt="">
+                    </div>
+                    <div class="swiper marketplace-slider">
+                        <div class="swiper-wrapper marketplace-slider-wrapper">
+                            <div class="swiper-slide marketplace-slider__item">
+                                <div class="marketplace-slider__item--video">
+                                    <iframe class="video-play-1" src="https://www.youtube.com/embed/NNQLJcJEzv0"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                                <div class="marketplace-slider__item--click">
+                                    <p>Click here to view video</p>
+                                </div>
+
+                            </div>
+                            <div class="swiper-slide marketplace-slider__item">
+                                <div class="marketplace-slider__item--video">
+                                    <iframe class="video-play-2" src="https://www.youtube.com/embed/k4yL3IZSPIc"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                                <div class="marketplace-slider__item--click">
+                                    <p>Click here to view video</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                    <div class="swiper marketplace-box">
+                        <div class="swiper-wrapper marketplace-box__listitem">
+                            <div class="swiper-slide box-item">
+                                <div class="box-item__heading">
+                                    <div class="box-item__bg bg_icon">
+                                        <p class="bg_text">Meta Content</p>
+                                    </div>
+                                    <div class="box-item__title">
+                                        <h2>Name of NFTs</h2>
+                                    </div>
+                                </div>
+                                <div class="box-item__text">
+                                    <p>When an unknown printer took a galley of type and scrambled it to make a type
+                                        specimen
+                                        book. It has survived not only five centuries, but also the leap into electronic
+                                        typesetting, remaining essentially unchanged.</p>
+                                </div>
+                                <div class="box-item__button btn">
+                                    <a href="">Buy Now</a>
+                                    <img src="./images/icon-right.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide box-item">
+                                <div class="box-item__heading">
+                                    <div class="box-item__bg bg_icon">
+                                        <p class="bg_text">Meta Content</p>
+                                    </div>
+                                    <div class="box-item__title">
+                                        <h2>Name of NFTs</h2>
+                                    </div>
+                                </div>
+                                <div class="box-item__text">
+                                    <p>When an unknown printer took a galley of type and scrambled it to make a type
+                                        specimen
+                                    </p>
+                                </div>
+                                <div class="box-item__button">
+                                    <a href="">Buy Now</a>
+                                    <img src="./images/icon-right.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Enjoy to Earn  -->
+
+    <section class="enjoytoearn template__section" id="enjoytoearn">
+        <div class="container">
+            <div class="enjoytoearn-container">
+                <div class="enjoytoearn-heading wow fadeInDownBig" data-wow-duration="1s">
+                    <div class="enjoytoearn-heading__bg bg_icon">
+                        <p class="bg_text">Enjoy to Earn</p>
+                    </div>
+                    <div class="enjoytoearn-heading__text">
+                        <h2>Enjoy to Earn</h2>
+                    </div>
+                </div>
+
+
+                <div class="enjoytoearn-center wow zoomInDown" data-wow-duration="2s">
+                    <img class="img-desktop" src="./images/image-center.png" alt="">
+                    <img class="img-mobile" src="./images/image-center-mobile.png" alt="">
+                    <div class="branch-click branch-top__left" data-target="3">
+                        <p>Casual game center</p>
+                        <img class="circle-top-left" src="./images/circle.png" alt="">
+                        <img class="circle-top-left-active" src="./images/circle-active.png" alt="">
+                    </div>
+                    <div class="branch-click branch-bottom__left" data-target="2">
+                        <p>Leaderboard</p>
+                        <img class="circle-bottom-left" src="./images/circle.png" alt="">
+                        <img class="circle-bottom-left-active" src="./images/circle-active.png" alt="">
+                    </div>
+                    <div class="branch-click branch-top__right active" data-target="0">
+                        <p>Daily Farming mission</p>
+                        <img class="circle-top-right" src="./images/circle.png" alt="">
+                        <img class="circle-top-right-active" src="./images/circle-active.png" alt="">
+                    </div>
+                    <div class="branch-click branch-bottom__right" data-target="1">
+                        <p>Casual game center</p>
+                        <img class="circle-bottom-right" src="./images/circle.png" alt="">
+                        <img class="circle-bottom-right-active" src="./images/circle-active.png" alt="">
+                    </div>
+
+                    <div class="swiper branch-slider">
+                        <div class="swiper-wrapper branch-heading">
+                            <div class="swiper-slide heading-item">
+                                <p>Daily Farming mission</p>
+                            </div>
+                            <div class="swiper-slide heading-item">
+                                <p>Casual game center</p>
+                            </div>
+                            <div class="swiper-slide heading-item">
+                                <p>Leaderboard</p>
+                            </div>
+                            <div class="swiper-slide heading-item">
+                                <p>Casual game center</p>
+                            </div>
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="enjoytoearn-button btn wow flipInX" data-wow-duration="1s" data-wow-delay="1s">
+                    <a href="">Go to App</a>
+                    <img src="./images/icon-right.png" alt="">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--End Enjoy to Earn  -->
+
+    <!-- Advisor  -->
+
+    <section class="advisor template__section" id="advisor">
+        <div class="container">
+            <div class="advisor-container">
+                <div class="advisor-heading wow fadeInDownBig" data-wow-duration="1s">
+                    <div class="advisor-heading__bg bg_icon">
+                        <p class="bg_text">Advisor</p>
+                    </div>
+                    <div class="advisor-heading__text">
+                        <h2>Advisor</h2>
+                    </div>
+                </div>
+                <div class="swiper advisor-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide box">
+                            <div class="box-image">
+                                <img src="./images/arvisor-item-1.png" alt="">
+                            </div>
+                            <div class="box-content">
+                                <div class="box-content__name">
+                                    <h2>Cris D Tran</h2>
+                                </div>
+                                <div class="box-content__info">
+                                    <p>CEO of VNSIP Former CEO of Infinity Blockchain Ventures Former Strategic
+                                        consultant
+                                        at Frost
+                                        & Sullivan</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide box">
+                            <div class="box-image">
+                                <img src="./images/NO-IMAGE.png" alt="">
+                            </div>
+                            <div class="box-content">
+                                <div class="box-content__name">
+                                    <h2>TBA, ZIPMEX</h2>
+                                </div>
+                                <div class="box-content__info">
+                                    <p>12 years in game industry: Operation, Marketing, Technical.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide box">
+                            <div class="box-image">
+                                <img src="./images/NO-IMAGE.png" alt="">
+                            </div>
+                            <div class="box-content">
+                                <div class="box-content__name">
+                                    <h2>TBA, C98</h2>
+                                </div>
+                                <div class="box-content__info">
+                                    <p>12 years in game industry: Operation, Marketing, Technical.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide box">
+                            <div class="box-image">
+                                <img src="./images/NO-IMAGE.png" alt="">
+                            </div>
+                            <div class="box-content">
+                                <div class="box-content__name">
+                                    <h2>TBA, SOLANA</h2>
+                                </div>
+                                <div class="box-content__info">
+                                    <p>12 years in game industry: Operation, Marketing, Technical.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide box">
+                            <div class="box-image">
+                                <img src="./images/NO-IMAGE.png" alt="">
+                            </div>
+                            <div class="box-content">
+                                <div class="box-content__name">
+                                    <h2>Cris D Tran</h2>
+                                </div>
+                                <div class="box-content__info">
+                                    <p>CEO of VNSIP Former CEO of Infinity Blockchain Ventures Former Strategic
+                                        consultant
+                                        at Frost
+                                        & Sullivan</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End Advisor  -->
+
+    <!-- Our Team -->
+
+    <section class="ourteam template__section" id="ourteam">
+        <div class="container">
+            <div class="ourteam-container">
+                <div class="ourteam-heading wow fadeInDownBig" data-wow-duration="1s">
+                    <div class="ourteam-heading__bg bg_icon">
+                        <p class="bg_text">Our Team</p>
+                    </div>
+                    <div class="ourteam-heading__text">
+                        <h2>Our Team</h2>
+                    </div>
+                </div>
+                <div class="swiper ourteam-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide box">
+                            <div class="box-image">
+                                <img src="./images/CEO-OutTeam-1.jpg" alt="">
+                            </div>
+                            <div class="box-content">
+                                <div class="box-content__name">
+                                    <h2>Pham Chi Nhan</h2>
+                                </div>
+                                <div class="box-content__position">
+                                    <p>CEO</p>
+                                </div>
+                                <ul class="box-content__info">
+                                    <li>Entrepreneur, founder of Alive Co.,</li>
+                                    <li>Former Operation Manager at VNG, the first unicorn of Vietnam</li>
+                                    <li>Former Business Development Director at many startups in technology, IoT,
+                                        marketing.</li>
+                                    <li>MSc in Financial Management</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-slide box">
+                            <div class="box-image">
+                                <img src="./images/CEO-OutTeam-2.jpg" alt="">
+                            </div>
+                            <div class="box-content">
+                                <div class="box-content__name">
+                                    <h2>Lyo Nguyen</h2>
+                                </div>
+                                <div class="box-content__position">
+                                    <p>CPO</p>
+                                </div>
+                                <ul class="box-content__info">
+                                    <li>7+ years experience as PO, PM of social platform at VNG corp, ALive corp</li>
+                                    <li> 3+ years experience as PO of Payment wallet at VNG</li>
+                                    <li>2+ years experience as Game Ops at TFL</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-slide box">
+                            <div class="box-image">
+                                <img src="./images/CEO-OutTeam-3.jpg" alt="">
+                            </div>
+                            <div class="box-content">
+                                <div class="box-content__name">
+                                    <h2>Shany Pham</h2>
+                                </div>
+                                <div class="box-content__position">
+                                    <p>CMO</p>
+                                </div>
+                                <ul class="box-content__info">
+                                    <li>Founder of AINetwork.vn</li>
+                                    <li>5+ years in livestream & social commerceG</li>
+                                    <li>2+ years experience as Game Ops at TFL</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-slide box">
+                            <div class="box-image">
+                                <img src="./images/CEO-OutTeam-4.jpg" alt="">
+                            </div>
+                            <div class="box-content">
+                                <div class="box-content__name">
+                                    <h2>Cathy Tran</h2>
+                                </div>
+                                <div class="box-content__position">
+                                    <p>Community Engagement and Strategy Director</p>
+                                </div>
+                                <ul class="box-content__info">
+                                    <li>7+ years in livestream at Bigo PTE, 360Live
+                                    </li>
+                                    <li>3+ years in content creative at Asia Innovation Group (Uplive, GIFTO...), VNG
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-slide box">
+                            <div class="box-image">
+                                <img src="./images/CEO-OutTeam-2.jpg" alt="">
+                            </div>
+                            <div class="box-content">
+                                <div class="box-content__name">
+                                    <h2>Lyo Nguyen</h2>
+                                </div>
+                                <div class="box-content__position">
+                                    <p>CPO</p>
+                                </div>
+                                <ul class="box-content__info">
+                                    <li>7+ years experience as PO, PM of social platform at VNG corp, ALive corp</li>
+                                    <li> 3+ years experience as PO of Payment wallet at VNG</li>
+                                    <li>2+ years experience as Game Ops at TFL</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End Our Team -->
+
+    <!-- Roadmap  -->
+
+    <section class="roadmap template__section" id="roadmap">
+        <div class="container">
+            <div class="roadmap-heading">
+                <div class="roadmap-heading__bg bg_icon">
+                    <p class="bg_text bg_timeline">Timeline</p>
+                    <p class="bg_text bg_roadmap">Roadmap</p>
+                </div>
+                <div class="roadmap-heading__text">
+                    <h2>Roadmap</h2>
+                </div>
+            </div>
+            <div class="line">
+
+            </div>
+            <div class="roadmap-container scrollbar">
+                <div class="roadmap-item">
+                    <div class="roadmap-item__months--bg">
+                        <div class="roadmap-item__months">
+                            Jan 2022
+                        </div>
+                    </div>
+                    <img class="roadmap-item__line" src="./images/line-roadmap.png" alt="">
+                    <p class="roadmap-item__text">IDO (7-12/01)
+                        Maketplace (18-20/01)
+                        INO MetaSpace, MetaPet
+                    </p>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-item__months--bg">
+                        <div class="roadmap-item__months">
+                            Feb 2022
+                        </div>
+                    </div>
+                    <img class="roadmap-item__line" src="./images/line-roadmap.png" alt="">
+                    <p class="roadmap-item__text">Release app iOS & Android
+                        Daily farming mission
+                    </p>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-item__months--bg">
+                        <div class="roadmap-item__months">
+                            Mar 2022
+                        </div>
+                    </div>
+                    <img class="roadmap-item__line" src="./images/line-roadmap.png" alt="">
+                    <p class="roadmap-item__text">Guild
+                        Live Battle - PK
+                        SVIP system
+                        User personalize profile
+                    </p>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-item__months--bg">
+                        <div class="roadmap-item__months">
+                            May 2022
+                        </div>
+                    </div>
+                    <img class="roadmap-item__line" src="./images/line-roadmap.png" alt="">
+                    <p class="roadmap-item__text">Media NFTs Creator
+                        Live Battle - Pk
+                        Casual Game
+                        (monthly release)
+                        Guild Battle
+                    </p>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-item__months--bg">
+                        <div class="roadmap-item__months">
+                            Aug 2022
+                        </div>
+                    </div>
+                    <img class="roadmap-item__line" src="./images/line-roadmap.png" alt="">
+                    <p class="roadmap-item__text">Boss Hunter
+                        Game World
+                        User news feed
+                        Mataverse Phase 1
+                    </p>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-item__months--bg">
+                        <div class="roadmap-item__months">
+                            Nov 2022
+                        </div>
+                    </div>
+                    <img class="roadmap-item__line" src="./images/line-roadmap.png" alt="">
+                    <p class="roadmap-item__text">Mataverse Phase 2
+                        Online shopping
+                        Augmented Reality
+                        Filter & Gift
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End Roadmap  -->
+
+    <!-- Our Partners  -->
+
+    <section class="ourpartners template__section" id="ourpartners">
+        <div class="container">
+            <div class="ourpartners-container">
+                <div class="ourpartners-heading wow fadeInDownBig" data-wow-duration="1s">
+                    <div class="ourpartners-heading__bg bg_icon">
+                        <p class="bg_text">Backer & Partners</p>
+                    </div>
+                    <div class="ourpartners-heading__text">
+                        <h2>Backer & Partners</h2>
+                    </div>
+                </div>
+                <div class="ourpartners-content wow fadeInUpBig" data-wow-duration="1s">
+                    <p>
+                        When an unknown printer took a galley of type and scrambled it to make a type specimen book. It
+                        has survived not only five centuries, but also the leap into electronic typesetting, remaining
+                        essentially unchanged lorem ipsum amet long setup
+                    </p>
+                </div>
+                <div class="ourpartners-listitem scrollbar">
+                    <a href="#" class="ourpartners-listitem__item">
+                        <div class="bg">
+                            <img src="./images/partners-item-1.png" alt="">
+                        </div>
+                    </a>
+                    <a href="#" class="ourpartners-listitem__item">
+                        <div class="bg">
+                            <img src="./images/partners-item-2.png" alt="">
+                        </div>
+                    </a>
+                    <a href="#" class="ourpartners-listitem__item">
+                        <div class="bg">
+                            <img src="./images/partners-item-3.png" alt="">
+                        </div>
+                    </a>
+                    <a href="#" class="ourpartners-listitem__item">
+                        <div class="bg">
+                            <img src="./images/partners-item-4.png" alt="">
+                        </div>
+                    </a>
+                    <a href="#" class="ourpartners-listitem__item">
+                        <div class="bg">
+                            <img src="./images/partners-item-5.png" alt="">
+                        </div>
+                    </a>
+                    <a href="#" class="ourpartners-listitem__item">
+                        <div class="bg">
+                            <img src="./images/partners-item-6.png" alt="">
+                        </div>
+                    </a>
+                    <a href="#" class="ourpartners-listitem__item">
+                        <div class="bg">
+                            <img src="./images/partners-item-7.png" alt="">
+                        </div>
+                    </a>
+                    <a href="#" class="ourpartners-listitem__item">
+                        <div class="bg">
+                        </div>
+                    </a>
+                    <a href="#" class="ourpartners-listitem__item">
+                        <div class="bg"></div>
+                    </a>
+                    <a href="#" class="ourpartners-listitem__item">
+                        <div class="bg"></div>
+                    </a>
+                    <a href="#" class="ourpartners-listitem__item">
+                        <div class="bg"></div>
+                    </a>
+                    <a href="#" class="ourpartners-listitem__item">
+                        <div class="bg"></div>
+                    </a>
+                    <a href="#" class="ourpartners-listitem__item">
+                        <div class="bg"></div>
+                    </a>
+                    <a href="#" class="ourpartners-listitem__item">
+                        <div class="bg"></div>
+                    </a>
+                    <a href="#" class="ourpartners-listitem__item">
+                        <div class="bg"></div>
+                    </a>
+                    <a href="#" class="ourpartners-listitem__item">
+                        <div class="bg"></div>
+                    </a>
+                    <a href="#" class="ourpartners-listitem__item">
+                        <div class="bg"></div>
+                    </a>
+                    <a href="#" class="ourpartners-listitem__item">
+                        <div class="bg"></div>
+                    </a>
+                    <a href="#" class="ourpartners-listitem__item">
+                        <div class="bg"></div>
+                    </a>
+                    <a href="#" class="ourpartners-listitem__item">
+                        <div class="bg"></div>
+                    </a>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--End Our Partners  -->
+
+
+    <!-- Articles  -->
+
+    <section class="articles template__section" id="articles">
+        <div class="container">
+            <div class="articles-container">
+                <div class="articles-heading wow fadeInDownBig" data-wow-duration="1s">
+                    <div class="articles-heading__bg bg_icon">
+                        <p class="bg_text">Articles</p>
+                    </div>
+                    <div class="articles-heading__text">
+                        <h2>Articles</h2>
+                    </div>
+                </div>
+
+                <div class="swiper articles-listitem scrollbar">
+                    <div class="swiper-wrapper articles-wrapper">
+                        <div class="swiper-slide articles-item">
+                            <div class="articles-item__image">
+                                <img src="./images/NO-IMAGE.png" alt="">
+                            </div>
+                            <div class="articles-item__caption">
+                                <div class="articles-item__caption--title">
+                                    <h2>What is Lorem Ipsum?</h2>
+                                </div>
+                                <div class="articles-item__caption--text">
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the
+                                        1500s, when
+                                        an unknown printer took a galley of type and scrambled it to make a type
+                                        specimen
+                                        book.</p>
+                                </div>
+                            </div>
+                            <div class="articles-item__button btn">
+                                <a href="">View more</a>
+                                <img src="./images/icon-right.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide articles-item">
+                            <div class="articles-item__image">
+                                <img src="./images/NO-IMAGE.png" alt="">
+                            </div>
+                            <div class="articles-item__caption">
+                                <div class="articles-item__caption--title">
+                                    <h2>What is Lorem Ipsum has been the industry's standard</h2>
+                                </div>
+                                <div class="articles-item__caption--text">
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the
+                                        1500s</p>
+                                </div>
+                            </div>
+                            <div class="articles-item__button btn">
+                                <a href="">View more</a>
+                                <img src="./images/icon-right.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide articles-item">
+                            <div class="articles-item__image">
+                                <img src="./images/NO-IMAGE.png" alt="">
+                            </div>
+                            <div class="articles-item__caption">
+                                <div class="articles-item__caption--title">
+                                    <h2>What is Lorem Ipsum has been</h2>
+                                </div>
+                                <div class="articles-item__caption--text">
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the
+                                        1500s, when
+                                        an unknown printer took a galley of type</p>
+                                </div>
+                            </div>
+                            <div class="articles-item__button btn">
+                                <a href="">View more</a>
+                                <img src="./images/icon-right.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide articles-item">
+                            <div class="articles-item__image">
+                                <img src="./images/NO-IMAGE.png" alt="">
+                            </div>
+                            <div class="articles-item__caption">
+                                <div class="articles-item__caption--title">
+                                    <h2>What is Lorem Ipsum est galley printer?</h2>
+                                </div>
+                                <div class="articles-item__caption--text">
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the
+                                        1500s, when
+                                        an unknown printer took a galley of type and scrambled it to make a type
+                                        specimen
+                                        book...</p>
+                                </div>
+                            </div>
+                            <div class="articles-item__button btn">
+                                <a href="">View more</a>
+                                <img src="./images/icon-right.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide articles-item">
+                            <div class="articles-item__image">
+                                <img src="./images/NO-IMAGE.png" alt="">
+                            </div>
+                            <div class="articles-item__caption">
+                                <div class="articles-item__caption--title">
+                                    <h2>What is Lorem Ipsum?</h2>
+                                </div>
+                                <div class="articles-item__caption--text">
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the
+                                        1500s, when
+                                        an unknown printer took a galley of type and scrambled it to make a type
+                                        specimen
+                                        book...</p>
+                                </div>
+                            </div>
+                            <div class="articles-item__button btn">
+                                <a href="">View more</a>
+                                <img src="./images/icon-right.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="swiper-button-next">
+                    <img src="./images/icon-next.png" alt="">
+                </div>
+                <div class="swiper-button-prev">
+                    <img src="./images/icon-prev.png" alt="">
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- End Articles  -->
+
+    <!-- Footer  -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-top">
+                    <a class="footer-top__logo" href="#homepage">
+                        <img src="./images/logo-metavill-2.png" alt="">
+                    </a>
+                    <div class="footer-top__contact">
+                        <div class="footer-top__contact--title">
+                            <h2>Contact</h2>
+                        </div>
+                        <div class="footer-top__contact--email">
+                            <img src="./images/Message.png" alt="">
+                            <a style="text-decoration: none;   "
+                                href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=welcome@metavill.io"
+                                target="_blank">welcome@metavill.io</a>
+                        </div>
+                        <div class="footer-top__contact--address">
+                            <img src="./images/Location.png" alt="">
+                            <a style="text-decoration: none;   " href="https://www.google.com/maps/search/138
+                                Robinson Road #02-50 Oxley Tower
+                                Singapore (068906)" target="_blank">138
+                                Robinson Road #02-50 Oxley Tower
+                                Singapore (068906)</a>
+                        </div>
+                    </div>
+                    <div class="footer-top__quicklink">
+                        <div class="footer-top__quicklink--title">
+                            <h2>Quicklink</h2>
+                        </div>
+                        <ul class="footer-top__quicklink--link">
+                            <li>
+                                <a href="#enjoytoearn">How to earn</a>
+                            </li>
+                            <li>
+                                <a href="#ourpartners">Partner</a>
+                            </li>
+                            <li>
+                                <a href="#roadmap">Roadmap</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-top__about">
+                        <div class="footer-top__about--title">
+                            <h2>About</h2>
+                        </div>
+                        <ul class="footer-top__about--link">
+                            <li>
+                                <a href="#ourteam">Our team</a>
+                            </li>
+                            <li>
+                                <a href="#advisior">Advisior</a>
+                            </li>
+                            <li>
+                                <a href="#whitepaper">Whitepaper</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-top__socials">
+                        <div class="footer-top__socials--title">
+                            <h2>Socials</h2>
+                        </div>
+                        <div class="footer-top__socials--listicon">
+                            <div class="socials__icon">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </div>
+                            <div class="socials__icon">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </div>
+                            <div class="socials__icon">
+                                <i class="fa-brands fa-pinterest-p"></i>
+                            </div>
+                            <div class="socials__icon">
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+
+        <div class="copyright">
+            <p>Copyright © 2022 Metavill</p>
+        </div>
+    </footer>
+
+    <!-- End Footer -->
+
+
+
+    <div class="loader">
+        <p>l</p>
+        <p>o</p>
+        <p>a</p>
+        <p>d</p>
+        <p>i</p>
+        <p>n</p>
+        <p>g</p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- // Swiper JS -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- wow js  -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js'></script>
+
+    <script src="./scripts/app.js"></script>
+</body>
+
+</html>

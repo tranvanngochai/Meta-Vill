@@ -1,0 +1,43 @@
+//font
+$font-1: 'Lexend',
+    sans-serif;
+$font-2: 'Archivo Black',
+    sans-serif;
+
+// color
+$main-color: #fff;
+$text-color: #FFFFFF;
+$hover-color: #12D6DF;
+$heading-color: #0b132a;
+$primary-color: #f53838;
+$gray-color: #dde0e4;
+$gray-light-color: #f8f8f8;
+$gray-lighter-color: #ddd;
+
+// responsive
+// $mobile-width: 600px;
+// $tablet-width: 1024px;
+$max-width-1366: 1366px;
+$max-width-1024: 1024px;
+$max-width-768: 768px;
+$max-width-576: 576px;
+$max-width-480: 480px;
+$max-width-414: 414px;
+$max-width-390: 390px;
+$max-width-375: 375px;
+$max-width-930: 930px;
+$max-width-896: 896px;
+$max-width-844: 844px;
+$max-width-736: 736px;
+$max-width-667: 667px;
+
+
+
+//box-shadow
+$box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+
+//transition
+$transition: box-shadow 0.3s ease,
+    background-color 0.3s ease,
+    color 0.3s ease;
